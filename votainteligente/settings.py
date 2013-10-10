@@ -256,7 +256,7 @@ EXTRA_APPS = ()
 
 #navigation bar
 # NAV_BAR = ('profiles','questionary','soulmate','facetoface','ask','ranking')
-NAV_BAR = ('profiles','questionary','soulmate','facetoface','ask','ranking')
+NAV_BAR = ('profiles','questionary','soulmate','facetoface')
 WEBSITE_METADATA = {
     'author' : u'Fundación Ciudadano Inteligente',
     'description' : u'Este 18 de Septiembre los chilenos elegiremos Presidente, Senadores, Diputados y Consejeros Regionales (CORE). Aquí encontrarás info para votar informado.',
