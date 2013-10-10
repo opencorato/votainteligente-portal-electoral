@@ -687,7 +687,7 @@ div.question-answer div.row.hidden-xs:nth-of-type(2), div.question-answer div.ro
 /* Footer */
 
 #footer {
-	padding-top: 45px;
+	padding: 40px 0 10px;
 	color: #B4BAC5;
 	background-color: #323a45;
 }
@@ -720,6 +720,20 @@ div.question-answer div.row.hidden-xs:nth-of-type(2), div.question-answer div.ro
 
 #footer .col-md-4:nth-child(2) {
 	text-align: center;
+}
+
+.logos-footer {
+	text-align: center;
+}
+
+.logos-footer h5 {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+	margin-top: 30px;
+	padding-bottom: 7px;
+}
+
+#footer .logos-footer img {
+	margin: 10px;
 }
 
 .container-profile {
