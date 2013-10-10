@@ -17,7 +17,7 @@
         <meta property="og:title" content="{{ 'title'|ogpdata }}">
         <meta property="og:type" content="{{ 'type'|ogpdata }}">
         <meta property="og:url" content="{{ 'url'|ogpdata }}">
-        <meta property="og:image" content="{{ 'image'|ogpdata }}">
+        <meta property="og:image" content="{% static 'image'|ogpdata %}">
         <!--eoff-->
 
         <link rel="shortcut icon" sizes="196x196" href="{% static 'img/votai-196.png' %}">
@@ -104,6 +104,7 @@
         <script>
          $(document).ready(function(){
             $(".chosen-select").chosen();
+            $('.email-prensa').attr('href','mailto:'+'prensa'+'@'+'ciudadanointeligente.org?'+'Subject=Prensa%20votainteligente');
          })
         </script>
         <script src="{% static 'js/vendor/carhartl-jquery-cookie-fedc4cb/jquery.cookie.js' %}" type="text/javascript"></script>
