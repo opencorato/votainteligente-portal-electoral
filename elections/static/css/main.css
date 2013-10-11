@@ -350,6 +350,7 @@ input, button, select, textarea {
 	font-style: italic;
 	font-size: 28px;
 	margin: 0;
+	color: #14b9d5;
 }
 
 .navbar-nav>li>a {
@@ -1041,4 +1042,26 @@ tr.primary p:first-child, tr.danger p:first-child {
 		padding: 9px 0px 10px;
 	}
 
+}
+
+/*Organizaciones*/
+
+ul.orgs {
+	list-style: none;
+	-webkit-padding-start: 0px;
+}
+
+ul.orgs .fondo-blanco {
+	margin-bottom: 15px;
+}
+
+.img-org {
+	width: 25%;
+	float: left;
+	min-width: 200px;
+}
+
+.txt-org {
+	width: 65%;
+	float: left;
 }
