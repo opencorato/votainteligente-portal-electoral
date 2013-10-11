@@ -6,7 +6,7 @@
 <html prefix="og: http://ogp.me/ns/{{ 'type'|ogpdata }}#">
     <head>
         <meta charset="utf-8">
-        <title>{% trans "Vota Inteligente" %} {% block title %}- {% trans "Portada" %}{% endblock title %}</title>
+        <title>{% trans "A quien elegimos" %} {% block title %}- {% trans "Portada" %}{% endblock title %}</title>
         <meta name="author" content="{{ 'author'|metadata }}">
         <meta name="description" content="{{ 'description'|metadata }}">
         <meta name="keywords" content="{{ 'keywords'|metadata }}">
@@ -41,7 +41,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="/">{% trans "VotaInteligente" %}</a>
+                        <a class="navbar-brand" href="/"><h4>{% trans "A quien elegimos" %}</h4></a>
                     </div>
                     <div class="collapse navbar-collapse">
                         {% get_flatpages as flatpages %}
@@ -84,11 +84,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 logos-footer">
-                        <img src="{% static 'img/logo-poderciudadano.png' %}">
-                        <img src="{% static 'img/logo-adc.png' %}">
-                        <img src="{% static 'img/logo-conciencia.png' %}">
-                        <img src="{% static 'img/logo-dl.png' %}">
-                        <img src="{% static 'img/logo-poderciudadano.png' %}">
+                        <a href="http://poderciudadano.org/" target="_blank"><img src="{% static 'img/logo-poderciudadano.png' %}"></a>
+                        <a href="http://www.adc.org.ar/" target="_blank"><img src="{% static 'img/logo-adc.png' %}"></a>
+                        <a href="http://www.conciencia.org/wordpress/" target="_blank"><img src="{% static 'img/logo-conciencia.png' %}"></a>
+                        <a href="http://www.directoriolegislativo.org/" target="_blank"><img src="{% static 'img/logo-dl.png' %}"></a>
+                        <a href="http://acij.org.ar/" target="_blank"><img src="{% static 'img/logo-acij.png' %}"></a>
                     </div>
                 </div>
             </div>
