@@ -344,6 +344,18 @@ input, button, select, textarea {
 
 /*Home*/
 
+.navbar>.container .navbar-brand h4 {
+	font-family: 'Amaranth', sans-serif;
+	font-weight: 700;
+	font-style: italic;
+	font-size: 28px;
+	margin: 0;
+}
+
+.navbar-nav>li>a {
+	padding-top: 24px;
+}
+
 .intro-home {
 	/*margin-top: 60px;*/
 }
