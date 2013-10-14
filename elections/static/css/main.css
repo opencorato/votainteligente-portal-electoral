@@ -256,6 +256,10 @@ input, button, select, textarea {
 	color: #14b9d5;
 }
 
+.navbar-nav {
+	float: right;
+}
+
 
 /*Menu Interno*/
 
