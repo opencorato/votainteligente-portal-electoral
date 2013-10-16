@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-10-11 18:49-0300\n"
-"PO-Revision-Date: 2013-10-14 10:04-0400\n"
+"POT-Creation-Date: 2013-10-16 13:56-0300\n"
+"PO-Revision-Date: 2013-10-16 13:57-0300\n"
 "Last-Translator: Lab en Ciudadano Inteligente <lab@ciudadanointeligente."
 "org>\n"
 "Language-Team: Lab at ciudadanointeligente <lab@ciudadanointeligente.org>\n"
+"Language: ES\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.5.7\n"
-"Language: ES\n"
+"X-Generator: Poedit 1.5.4\n"
 "X-Poedit-SourceCharset: es_CL\n"
 
 #: forms.py:10 tests/election_tags_based_search_tests.py:56
@@ -36,31 +36,28 @@ msgstr "Mi Elección"
 msgid "Mis Elecciones"
 msgstr "Mis Elecciones"
 
-#: templates/base.html:9
-msgid "Vota Inteligente"
-msgstr "A Quien Elegimos"
+#: templates/base.html:9 templates/base.html.py:45
+msgid "A quien elegimos"
+msgstr "A quien elegimos"
 
 #: templates/base.html:9 templates/elections/election_base.html:15
 msgid "Portada"
 msgstr "Portada"
 
-#: templates/base.html:44
-msgid "VotaInteligente"
-msgstr "A Quien Elegimos"
+#: templates/base.html:69
+#, fuzzy
+msgid "¿Quieres tener un sitio como éste para tus elecciones?"
+msgstr "¿Querés tener un sitio como este para tus elecciones?"
 
-#: templates/base.html:68
+#: templates/base.html:77
 msgid "Revisa nuestro código en Github"
 msgstr "Revisá nuestro código en Github"
-
-#: templates/base.html:69
-msgid "¿Quieres tener un Votainteligente para tu elección?"
-msgstr "¿Querés tener un sitio como este para tus elecciones?"
 
 #: templates/search.html:5 templates/search/tags_search.html:6
 msgid "Busqueda"
 msgstr "Búsqueda"
 
-#: templates/search.html:13 templates/elections/home.html:176
+#: templates/search.html:13 templates/elections/home.html:172
 #: templates/search/tags_search.html:14
 msgid "Buscar"
 msgstr "Buscar"
@@ -193,8 +190,8 @@ msgid "Perfiles"
 msgstr "Perfiles"
 
 #: templates/elections/election_base.html:60
-#: templates/elections/soulmate_candidate.html:47
-#: templates/elections/soulmate_candidate.html:49
+#: templates/elections/soulmate_candidate.html:50
+#: templates/elections/soulmate_candidate.html:52
 msgid "1/2 Naranja"
 msgstr "1/2 Naranja"
 
@@ -204,25 +201,24 @@ msgstr "1/2 Naranja"
 msgid "Ranking"
 msgstr "Ranking"
 
-#: templates/elections/election_questionary.html:66
+#: templates/elections/election_questionary.html:63
 msgid "y"
 msgstr "y"
 
-#: templates/elections/election_questionary.html:89
+#: templates/elections/election_questionary.html:85
 msgid "Quieres preguntar algo más?"
 msgstr "Querés preguntar algo más?"
 
 #: templates/elections/home.html:15
 msgid ""
-"Este 18 de Septiembre los chilenos elegiremos <strong>Presidente, Senadores, "
-"Diputados y Consejeros Regionales (CORE).</strong> Aquí encontrarás info "
-"para votar informado:"
-msgstr ""
 "Este 27 de octubre los argentinos elegiremos a nuestros senadores y "
 "diputados nacionales. En esta página encontrarás información para conocer "
 "mejor a los candidatos entre los que debemos elegir."
+msgstr ""
+"Este 27 de octubre elegiremos a nuestros senadores y diputados nacionales. "
+"En esta página encontrarás información para conocer mejor a los candidatos."
 
-#: templates/elections/home.html:174
+#: templates/elections/home.html:170
 msgid "Ingresa el nombre de tu candidato, distrito, comuna"
 msgstr "Ingresá el nombre de tu distrito"
 
@@ -246,11 +242,11 @@ msgstr "Cómo se calcula el ranking?"
 msgid "calculando"
 msgstr "calculando"
 
-#: templates/elections/soulmate_candidate.html:55
+#: templates/elections/soulmate_candidate.html:58
 msgid "Atención!"
 msgstr "Atención!"
 
-#: templates/elections/soulmate_candidate.html:55
+#: templates/elections/soulmate_candidate.html:58
 msgid ""
 "Para brindar una mejor respuesta es necesario que respondas todas las "
 "preguntas."
@@ -258,11 +254,11 @@ msgstr ""
 "Para brindar una mejor respuesta es necesario que respondas todas las "
 "preguntas."
 
-#: templates/elections/soulmate_candidate.html:78
+#: templates/elections/soulmate_candidate.html:81
 msgid "Que importancia le das a esta pregunta?"
 msgstr "Que importancia le das a esta pregunta?"
 
-#: templates/elections/soulmate_candidate.html:95
+#: templates/elections/soulmate_candidate.html:98
 msgid "Encontrar mi 1/2 naranja"
 msgstr "Encontrá mi 1/2 naranja"
 
@@ -273,3 +269,18 @@ msgstr "de afinidad"
 #: templates/elections/soulmate_response.html:24
 msgid "Declara tu amor publicamente:"
 msgstr "Declará tu amor publicamente:"
+
+#~ msgid "Vota Inteligente"
+#~ msgstr "A Quien Elegimos"
+
+#~ msgid "VotaInteligente"
+#~ msgstr "A Quien Elegimos"
+
+#~ msgid ""
+#~ "Este 18 de Septiembre los chilenos elegiremos <strong>Presidente, "
+#~ "Senadores, Diputados y Consejeros Regionales (CORE).</strong> Aquí "
+#~ "encontrarás info para votar informado:"
+#~ msgstr ""
+#~ "Este 27 de octubre los argentinos elegiremos a nuestros senadores y "
+#~ "diputados nacionales. En esta página encontrarás información para conocer "
+#~ "mejor a los candidatos entre los que debemos elegir."
