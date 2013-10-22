@@ -66,11 +66,11 @@
                 <div class="row">
                     <div class="col-md-4">
                         <ul>
-                            <li><a href="/" target="_blank"><i class="icon-heart-empty"></i>{% trans "¿Quieres tener un sitio como éste para tus elecciones?" %}</a></li>
+                            <li><a href="http://www.ciudadanointeligente.org/servicios/#votainteligente" target="_blank"><i class="icon-heart-empty"></i>{% trans "¿Quieres tener un sitio como éste para tus elecciones?" %}</a></li>
                         </ul>
                     </div>
                     <div class="col-md-4">
-                        Desarrollado por <a href="http://www.ciudadanointeligente.org/" target="_blank"><img src="{% static 'img/logo-ciudadanoi.png' %}" alt="Fundación Ciudadano Inteligente"></a>
+                        Desarrollado por <a href="http://www.ciudadanointeligente.org/" target="_blank"><img src="{% static 'img/logo-ciudadanoi.png' %}" alt="Fundación Ciudadano Inteligente" title="Fundación Ciudadano Inteligente"></a>
                     </div>
                     <div class="col-md-4">
                         <ul>
@@ -85,11 +85,11 @@
                 </div>
                 <div class="row">
                     <div class="col-md-12 logos-footer">
-                        <a href="http://poderciudadano.org/" target="_blank"><img src="{% static 'img/logo-poderciudadano.png' %}"></a>
-                        <a href="http://www.adc.org.ar/" target="_blank"><img src="{% static 'img/logo-adc.png' %}"></a>
-                        <a href="https://www.facebook.com/asconciencia" target="_blank"><img src="{% static 'img/logo-conciencia.png' %}"></a>
-                        <a href="http://www.directoriolegislativo.org/" target="_blank"><img src="{% static 'img/logo-dl.png' %}"></a>
-                        <a href="http://acij.org.ar/" target="_blank"><img src="{% static 'img/logo-acij.png' %}"></a>
+                        <a href="http://poderciudadano.org/" target="_blank"><img src="{% static 'img/logo-poderciudadano.png' %}" alt="Poder Ciudadano" title="Poder Ciudadano"></a>
+                        <a href="http://www.adc.org.ar/" target="_blank"><img src="{% static 'img/logo-adc.png' %}" alt="Asociación por los Derechos Civiles" title="Asociación por los Derechos Civiles"></a>
+                        <a href="https://www.facebook.com/asconciencia" target="_blank"><img src="{% static 'img/logo-conciencia.png' %}" alt="Conciencia" title="Conciencia"></a>
+                        <a href="http://www.directoriolegislativo.org/" target="_blank"><img src="{% static 'img/logo-dl.png' %}" alt="Fundación Directorio Legislativo" title="Fundación Directorio Legislativo"></a>
+                        <a href="http://acij.org.ar/" target="_blank"><img src="{% static 'img/logo-acij.png' %}" alt="Asociación Civil por la Igualdad y la Justicia" title="Asociación Civil por la Igualdad y la Justicia"></a>
                     </div>
                 </div>
             </div>
@@ -123,15 +123,14 @@
          })
         </script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.3.1/jquery.cookie.min.js" type="text/javascript"></script>
-        <script type="text/javascript">
-            var _gaq = _gaq || [];
-            _gaq.push(['_setAccount', '{{ 'code'|ga }}']);
-            _gaq.push(['_trackPageview']);
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-            (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            ga('create', '{{ 'code'|ga }}', '{{ 'name'|ga }}');
+            ga('send', 'pageview');
         </script>
     </body>
 </html>
