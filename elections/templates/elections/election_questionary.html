@@ -2,6 +2,7 @@
 {% load i18n %}
 {% load thumbnail %}
 {% load votainteligente_extras %}
+{% load static %}
 
 {% block title %} - {{election}} - {% trans "Cuestionario"%}{% endblock title%}
 
@@ -22,6 +23,7 @@
 					<p class="question">
 						{{question.question}}
 					</p>
+					{% if question.number_of_answers > 0%}
 
 					{% for answer in question.answer_set.all %}
 						{% if answer.candidate_set.all|length > 0 %}
@@ -33,11 +35,13 @@
 									<li>
 									{% if candidate.photo %}
 										{% thumbnail candidate.photo "100x100" crop="center" as im %}
-										<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.slug %}"><img src="{{im.url}}" alt="{{candidate.name}}" border="0" class="img-responsive"></a>
+										<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.slug %}"><img src="{{im.url}}" alt="{{candidate.name}}" border="0" class="img-responsive" title="{{candidate.name}}"></a>
 										{% endthumbnail %}
 									{% else %}
-										{% thumbnail 'static/img/candidate-default.jpg' "100x100" crop="center" as im %}
-										<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.slug %}"><img src="{{im.url}}" alt="{{candidate.name}}" border="0" class="img-responsive"></a>
+										{% static "img/candidate-default.jpg" as candidate_default %}
+										{% thumbnail candidate_default "100x100" crop="center" as im %}
+										<a href="{% url 'candidate_detail_view' election_slug=election.slug slug=candidate.slug %}"><img src="{{im.url}}" alt="{{candidate.name}}" border="0" class="img-responsive" title="{{candidate.name}}"></a>
+										<span>{{candidate.name}}</span>
 										{% endthumbnail %}
 									{% endif %}
 									</li>
@@ -73,6 +77,9 @@
 					
 						<!-- end mobile version -->
 					{% endfor %}
+					{% else %}
+					<div>{% trans "Ningún candidato ha respondido." %}</div>
+					{% endif %}
 				</div>
 				{% endfor %}
 			</div>
