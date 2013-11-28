@@ -234,10 +234,6 @@ strong {
 
 /*Botones*/
 
-.btn {
-	font-weight: 300;
-}
-
 .btn-lg {
 	font-size: 14px;
 	font-family: 'Lato', sans-serif;
@@ -273,6 +269,12 @@ strong {
 .btn-danger:hover {
 	background-color: #af373c;
 	border-color: transparent;
+}
+
+.btn-warning {
+	color: #fff;
+	background-color: #ffd200;
+	border: none;
 }
 
 input, button, select, textarea {
