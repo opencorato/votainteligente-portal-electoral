@@ -263,12 +263,11 @@ strong {
 
 .btn-danger {
 	background-color: #fe635f;
-	border-color: transparent;
+	border: none;
 }
 
 .btn-danger:hover {
 	background-color: #af373c;
-	border-color: transparent;
 }
 
 .btn-warning {
