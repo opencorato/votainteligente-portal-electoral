@@ -92,7 +92,7 @@
             </ul>
             <a href="{{ featured_election.get_absolute_url }}"><h3 class="portada">{{ featured_election.name }}</h3></a>
             <div class="election-description">
-              <p>{{ featured_election.description|truncatewords:50 }}</p> 
+              <p>{{ featured_election.description|safe }}</p> 
             </div>
           </li>
         {% endfor %}
@@ -130,7 +130,7 @@
           </ul>
           <a href="{{ featured_election.get_absolute_url }}"><h3 class="portada">{{ featured_election.name }}</h3></a>
           <div class="election-description">
-            <p>{{ featured_election.description|truncatewords:33 }}</p> 
+            <p>{{ featured_election.description|safe }}</p> 
           </div>
         </li>
         {% if forloop.counter == 3 %}
