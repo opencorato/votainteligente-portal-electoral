@@ -22,6 +22,7 @@ Before the installation process is started a number of requirements is needed
 - [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/)
 - [Git](http://git-scm.com/)
 - The requirements that [sorl-thumbnail has](http://sorl-thumbnail.readthedocs.org/en/latest/requirements.html)
+- Magick++ (if you use CentOS-Fedora you need GraphicsMagick-c++-devel package, for Debian based you need libgraphicsmagick++1-dev libboost-python-dev packages)
 
 ## Installation process
 
