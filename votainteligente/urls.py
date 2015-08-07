@@ -20,6 +20,7 @@ urlpatterns = patterns('',
     url(r'^', include('elections.urls')),
     ('^pages/', include('django.contrib.flatpages.urls')),
     (r'^tinymce/', include('tinymce.urls')),
+    ('^phone/', include('votai_phone.urls'))
 )
 
 

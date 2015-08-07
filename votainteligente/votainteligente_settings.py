@@ -41,6 +41,7 @@ INSTALLED_APPS = (
     'tinymce',
     'djcelery',
     'mathfilters',
+    'votai_phone',
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
@@ -73,12 +74,16 @@ LOGGING = {
             'level': 'ERROR',
             'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
-        }
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+        },
     },
     'loggers': {
         'django.request': {
-            'handlers': ['mail_admins'],
-            'level': 'ERROR',
+            'handlers': ['console'],
+            'level': 'DEBUG',
             'propagate': True,
         },
     }
@@ -181,7 +186,7 @@ LOGGING = {'version': 1,
 #END LOGGING
 
 THEME = None
-
+PHONE_ELECTION_ID = 1
 try:
     from local_settings import *
 except ImportError, e:
