@@ -18,13 +18,13 @@
         </form>
     </div>
 
-        <h3>{% trans "Elecciones" %}</h3>
+        <h3>{% trans "Elezioni" %}</h3>
 
         {% for election in result %}
             <p>
                 {{ election.name }}
             </p>
         {% empty %}
-            <p>{% trans "No encontré resultados" %}</p>
+            <p>{% trans "Nessun risultato trovato" %}</p>
         {% endfor %}
 {% endblock %}

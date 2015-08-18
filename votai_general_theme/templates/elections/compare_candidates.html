@@ -2,9 +2,9 @@
 {% load i18n %}
 {% load votainteligente_extras %}
 
-{% block title %} - {{election}} - {% trans "Frente a Frente"%}{% endblock title%}
+{% block title %} - {{elezioni}} - {% trans "Testa a Testa"%}{% endblock title%}
 
-{% block last_breadcrumb %}{% trans "Frente a Frente"%}{% endblock last_breadcrumb %}
+{% block last_breadcrumb %}{% trans "Testa a Testa"%}{% endblock last_breadcrumb %}
 
 {% block tab_facetoface %}class="active"{% endblock %}
 
@@ -17,13 +17,13 @@
 		<div class="col-md-12">
 			<div class="candidate-percentage-txt">
 				<p class="text-center">
-					{% trans "El porcentaje de similitud es" %} {{similitude|floatformat}}%
+					{% trans "Percentuale somiglianza è" %} {{similitude|floatformat}}%
 				</p>
 			</div>
 		</div>
 		{% endif %}
 		<div class="col-md-6">
-			<select data-placeholder="{% trans "Selecciona un candidato" %}" name="candidate_one" id="candidate_one" class="chosen-select" style="width:100%">
+			<select data-placeholder="{% trans "Seleziona un candidato" %}" name="candidate_one" id="candidate_one" class="chosen-select" style="width:100%">
 				<option value=""></option>
 				{% for candidato in election.candidates.all %}
 					{% if second_candidate.id != candidato.id %}
@@ -34,7 +34,7 @@
 			</select>
 		</div>
 		<div class="col-md-6">
-			<select data-placeholder="{% trans "Selecciona un candidato" %}" name="candidate_two" id="candidate_two" class="chosen-select" style="width:100%">
+			<select data-placeholder="{% trans "Seleziona un candidato" %}" name="candidate_two" id="candidate_two" class="chosen-select" style="width:100%">
 				<option value=""></option>
 				{% for candidato in election.candidates.all %}
 					{% if first_candidate.id != candidato.id %}
@@ -82,7 +82,7 @@
 				</div>
 				{% endfor %}
 			{% else %}
-			<div class="alert alert-info">{% trans "Aquí se mostraran las diferencias y similitudes entre los candidatos que selecciones." %}</div>
+			<div class="alert alert-info">{% trans "Qui verranno mostrate le differenze e le somiglianze tra i candidati selezionati." %}</div>
 			{% endif %}
 		
 	</div>
@@ -119,7 +119,7 @@
 				
 			{% endfor %}
 		{% else %}
-		<div class="alert alert-info">{% trans "Aquí se mostraran las diferencias y similitudes entre los candidatos que selecciones." %}</div>
+		<div class="alert alert-info">{% trans "Qui verranno mostrate le differenze e le somiglianze tra i candidati selezionati." %}</div>
 		{% endif %}
 	</div>
 	<!-- display only for small devices -->

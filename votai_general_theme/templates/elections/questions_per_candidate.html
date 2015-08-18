@@ -6,14 +6,14 @@
 {% block extrajs %}
 {% endblock extrajs %}
 
-{% block title %} - {{candidate}} - {% trans "Preguntas"%}{% endblock title%}
+{% block title %} - {{candidate}} - {% trans "Domande"%}{% endblock title%}
 
 {% block last_breadcrumb %}{{ candidate }}{% endblock last_breadcrumb %}
 
 {% block mainelection %}
 <section id="election">
 	<div>
-		<h3>{% trans "Preguntas para" %} {{ candidate }}</h3>
+		<h3>{% trans "Domande per" %} {{ candidate }}</h3>
 	</div>
 
 	{% autopaginate questions 10 %}

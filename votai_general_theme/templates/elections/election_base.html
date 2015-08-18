@@ -5,7 +5,7 @@
 {% block extrajs %}
 {% endblock extrajs %}
 
-{% block title %} - {{election}} - {% trans "Perfiles"%}{% endblock title%}
+{% block title %} - {{elezioni}} - {% trans "Perfiles"%}{% endblock title%}
 
 {% block keywords %}{% for tag in election.tags.all %}, {{tag}}{% endfor %}{% endblock keywords %}
 
@@ -16,8 +16,8 @@
 	<div class="row breadscrumb-social hidden-xs">
 		<div class="col-md-9">
 			<ul class="breadcrumb">
-				<li><a href="/">{% trans "Portada" %}</a></li>
-				<li><a href="{% url 'election_view' slug=election.slug %}">{{ election }}</a></li>
+				<li><a href="/">{% trans "Home" %}</a></li>
+				<li><a href="{% url 'election_view' slug=election.slug %}">{{ elezioni }}</a></li>
 				<li class="active">{% block last_breadcrumb %}{% trans "Perfiles"%}{% endblock last_breadcrumb %}</li>
 			</ul>
 		</div>
@@ -55,16 +55,16 @@
 			<nav class="col-md-12">
 				<ul class="list-inline">
 					{% if 'profiles'|val_navbars  %}
-					<li {% block tab_profile %}{% endblock %}><a href="{% url 'election_view' slug=election.slug %}" accesskey="p" title="{% trans "Perfiles" %} (Alt+p)"><i class="icon-group"></i> {% trans "Perfiles" %}</a></li>
+					<li {% block tab_profile %}{% endblock %}><a href="{% url 'election_view' slug=election.slug %}" accesskey="p" title="{% trans "Profili" %} (Alt+p)"><i class="icon-group"></i> {% trans "Profili" %}</a></li>
 					{% endif %}
 					{% if 'questionary'|val_navbars and election.uses_questionary  %}
-					<li {% block tab_questionary %}{% endblock %}><a href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Cuestionario" %} (Alt+c)"><i class="icon-list"></i> {% trans "Cuestionario" %}</a></li>
+					<li {% block tab_questionary %}{% endblock %}><a href="{% url 'questionary_detail_view' slug=election.slug %}" accesskey="c" title="{% trans "Domande" %} (Alt+c)"><i class="icon-list"></i> {% trans "Domande" %}</a></li>
 					{% endif %}
 					{% if 'soulmate'|val_navbars and election.uses_soul_mate  %}
-					<li {% block tab_soulmate %}{% endblock %}><a href="{% url 'soul_mate_detail_view' slug=election.slug %}" accesskey="n" title="{% trans "1/2 Naranja" %} (Alt+n)"><i class="icon-heart"></i> {% trans "1/2 Naranja" %}</a></li>
+					<li {% block tab_soulmate %}{% endblock %}><a href="{% url 'soul_mate_detail_view' slug=election.slug %}" accesskey="n" title="{% trans "Dimmi la tua" %} (Alt+n)"><i class="icon-heart"></i> {% trans "Dimmi la tua" %}</a></li>
 					{% endif %}
 					{% if 'facetoface'|val_navbars and election.uses_face_to_face  %}
-					<li {% block tab_facetoface %}{% endblock %}><a href="{% block url_face_to_face %}{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}{% endblock url_face_to_face %}" accesskey="f" title="{% trans "Frente a Frente" %} (Alt+f)"><i class="icon-bolt"></i> {% trans "Frente a Frente" %}</a></li>
+					<li {% block tab_facetoface %}{% endblock %}><a href="{% block url_face_to_face %}{% url 'face_to_face_no_candidate_detail_view' slug=election.slug %}{% endblock url_face_to_face %}" accesskey="f" title="{% trans "Testa a Testa" %} (Alt+f)"><i class="icon-bolt"></i> {% trans "Testa a Testa" %}</a></li>
 					{% endif %}
 					
 					{% if election.extra_info_title %}

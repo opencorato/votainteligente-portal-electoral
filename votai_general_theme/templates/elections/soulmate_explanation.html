@@ -15,17 +15,17 @@
                         <thead>
                           <tr>
                             <th>
-                              Mi opinión
+                              La mia opinione
                             </th>
                             <th>
-                              La opinión del candidato
+                              La opinione del candidato
                             </th>
                           </tr>
                         </thead>
                         <tbody>
                     {% for topic_slug, topic_match in value.per_topic.items %}
                           <tr class="active">
-                            <td colspan="2" title="{% if topic_match.my_position %}Tu opinión fue: {{topic_match.my_position.label}}{% else %} No tuviste opinión{% endif %} y {% if topic_match.their_position %} el candidato dijo: {{topic_match.their_position.label}}{% else %}El candidato no tiene posición.{% endif %}">
+                            <td colspan="2" title="{% if topic_match.my_position %}Il tuo commento è stato: {{topic_match.my_position.label}}{% else %} Nessuna posizione{% endif %} e {% if topic_match.their_position %} il candidato ha detto: {{topic_match.their_position.label}}{% else %}Il candidato no ha posizione.{% endif %}">
                               <strong>{{topic_match.topic.label}}</strong></td>
                           </tr>
                           <tr class="{% if topic_match.match %}success{% else %}info{% endif %}">
@@ -33,14 +33,14 @@
                               {% if topic_match.my_position %}
                               {{topic_match.my_position.label}}
                             {% else %}
-                              No tuviste opinión
+                              Nessuna opinione
                             {% endif %}
                             </td>
                             <td>
                               {% if topic_match.their_position %}
                                 {{topic_match.their_position.label}}
                               {% else %}
-                                El candidato no tiene posición.
+                                Il candidato non ha opinione.
                               {% endif %}  
                             </td>
                           </tr>
